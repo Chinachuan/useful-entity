@@ -2,11 +2,10 @@ package com.useful.entity.user;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.Table;
+
+import com.useful.support.IdEntity;
 
 /**
  * 
@@ -15,12 +14,9 @@ import javax.persistence.Table;
  */
 @Entity
 @Table(name="TBL_USER",indexes = {@Index(name = "IDX_QRY1",columnList ="cardNo")})
-public class User{
+public class User extends IdEntity{
 	
-	@Id
-	@GeneratedValue(strategy= GenerationType.IDENTITY)
-	@Column(length=20)
-	private Long id;
+	private static final long serialVersionUID = 1L;
 	
 	@Column(length=15)
 	private String username;
@@ -107,6 +103,12 @@ public class User{
 
 	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
+	}
+
+	@Override
+	public String toString() {
+		return "User [username=" + username + ", showname=" + showname + ", password=" + password + ", cardNo=" + cardNo
+				+ ", iphone=" + iphone + ", email=" + email + ", qqCode=" + qqCode + ", createTime=" + createTime + "]";
 	}
 	
 	
