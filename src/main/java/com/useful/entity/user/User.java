@@ -8,9 +8,10 @@ import javax.persistence.Table;
 import com.useful.support.IdEntity;
 
 /**
- * 
- * @author Admin
- *
+ * @ClassName: User
+ * @Description: TODO(用户实体) 
+ * @author: Jiuchuan.Shi
+ * @Date: 2018年11月16日 下午7:40:40
  */
 @Entity
 @Table(name="TBL_USER",indexes = {@Index(name = "IDX_QRY1",columnList ="cardNo")})
