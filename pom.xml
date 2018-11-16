@@ -3,4 +3,20 @@
   <groupId>com.useful</groupId>
   <artifactId>useful-entity</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+   <properties>
+  		<java.version>1.7</java.version>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.useful</groupId>
+			<artifactId>useful-db-support</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	
 </project>
