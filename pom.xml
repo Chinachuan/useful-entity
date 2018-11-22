@@ -17,6 +17,14 @@
 			<artifactId>useful-db-support</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>1.5.6.RELEASE</version>
+			<optional>true</optional>
+		</dependency>
+		
 	</dependencies>
 	
 </project>

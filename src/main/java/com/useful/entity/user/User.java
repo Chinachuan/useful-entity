@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Index;
 import javax.persistence.Table;
 
+import com.useful.entity.annotation.ParmAnalysis;
 import com.useful.support.IdEntity;
 
 /**
@@ -19,6 +20,7 @@ public class User extends IdEntity{
 	
 	private static final long serialVersionUID = 1L;
 	
+	@ParmAnalysis(message = "添加用户，好歹你得有个名字啊，基操啊!")
 	@Column(length=15)
 	private String username;
 	
